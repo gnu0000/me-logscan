@@ -1,0 +1,30 @@
+===============================================================
+Total queries   : 6,127,434 (129 types)
+Total selects   : 3,698,361
+Total inserts   :    93,246
+Total deletes   :   934,575
+Total updates   : 1,351,240
+Total replaces  :    50,006
+===============================================================
+top 20 query Types by count:                                
+===============================================================
+1,357,354 SELECT * FROM interactiontemplatecollections where
+  439,079 SELECT name, value, displayName FROM periodicities WHERE
+  242,967 SELECT * FROM onlineadvocate.userrelationships JOIN onlineadvocate.users AS Responder ON Responder.id=userrelationships.relatedUserId JOIN onlineadvocate.users 
+  242,951 SELECT * FROM groupMembershipRule JOIN groups ON groupMembershipRule.groupId = groups.id WHERE
+  210,508 SELECT umtp.id, userid, name as messagetype, ispreferred, lastmodifiedby, lastmodified FROM notifications.usermessagetypepreferences umtp join notifications.mes
+  132,763 SELECT * FROM onlineadvocate.groupMembershipInclusions JOIN onlineadvocate.groups ON groupMembershipInclusions.groupId = groups.id JOIN onlineadvocate.userrelat
+  111,666 SELECT bytes FROM serialized WHERE
+  110,966 SELECT id, title, parentRelationshipId,subType FROM relationships WHERE
+  103,548 SELECT id, firstName, lastName, address1, address2, city, state, zip, latitude, longitude, okToCall, username, dateOfBirth, email, activated, activationPIN, ema
+   91,665 SELECT userRelationshipBlobDataDeclarations.id AS declarationId, fieldId, name, type, typeDefinition,  value, longitudinal FROM userRelationshipBlobDataFields I
+   57,740 SELECT id,title,parentRelationshipId,subtype FROM relationships WHERE
+   53,898 SELECT studyId, accessSetId, subject, scope, action FROM accessSetCapabilities WHERE
+   33,096 SELECT inverseRelationshipId FROM relationships WHERE
+   29,787 SELECT token, reference, reference2, defaultType, defaultValue, `order` FROM genericEvaluationTokens WHERE
+   29,785 SELECT id, name FROM genericEvaluations WHERE
+   26,987 SELECT name, contextType, notificationScope, relevanceEvaluationId, subscriberDerivation, subscriberDerivationAccessor, subjectAccessor, responderAccessor, stud
+   26,986 SELECT attribute, accessor FROM notificationAttributes WHERE
+   26,985 SELECT sendTimeChecks.id, sendTimeChecks.name, sendTimeCheckParameters.type, sendTimeCheckParameters.value FROM `notificationsendtimechecks` INNER JOIN sendtime
+   24,227 SELECT * FROM onlineadvocate.groups LEFT JOIN onlineadvocate.grouptag ON groupid=groups.id  WHERE
+   23,221 SELECT userId,relatedUserId,relationshipId,pairType,pairSubType,isActive,relationStartDate,relationEndDate,isCareGiver FROM userrelationships WHERE
